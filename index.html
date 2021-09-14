@@ -1,0 +1,78 @@
+<marquee direction="right"><strong></strong>Saya Sudah Berusaha Semaksimal Mungkin, Saya Kurang Paham Menambahkan Responsivenya<strong></marquee>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KESEHATAN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="./images/logo.png" alt="" class="img-logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="Content">Content</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Health is Important<br>It's <span>For Ourselves</span></h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqua.</p>
+                    <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="./images/vaksin1.png" alt="" class="vaksin">
+
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./images/thumb1.png" alt="" onclick="imgSlider('./images/vaksin1.png');changeCircleColor('#f85b4a')"></li>
+            <li><img src="./images/thumb2.png" alt="" onclick="imgSlider('./images/vaksin2.png');changeCircleColor('#ff9833')"></li>
+            <li><img src="./images/thumb3.png" alt="" onclick="imgSlider('./images/vaksin3.png');changeCircleColor('#4a2c12')"></li>
+        </ul>
+        <ul class="social-media">
+            <li><a href="#"><img src="./images/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="./images/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="./images/twitter.png" alt=""></a></li>
+        </ul>
+    </section> 
+    <div class="deskripsi">
+        <h2>Content</h2>
+    </div>
+    <img src="images/2.jpg" class="rounded float-start" alt="img-logo">
+    <img src="images/3.jpg" class="rounded float-end" alt="img-logo">
+    <img src="images/5.jpg" class="rounded float-end" alt="img-logo">
+    <img src="images/4.jpg" class="rounded float-end" alt="img-logo">
+</div>
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">Copyright &copy; Rendy Liliyansyah2021</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                <div class="col-lg-4 text-lg-end">
+                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    <span>POWERED BY <a href="https://gamelab.id/">gamelab</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.vaksin').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
